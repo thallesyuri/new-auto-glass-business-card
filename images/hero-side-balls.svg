@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="368" height="738" viewBox="0 0 368 738">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #118ab2;
+      }
+
+      .cls-2 {
+        fill: #ffd166;
+      }
+    </style>
+  </defs>
+  <g id="hero-side-balls" transform="translate(-976 -66)">
+    <circle id="Ellipse_6" data-name="Ellipse 6" class="cls-1" cx="111" cy="111" r="111" transform="translate(1077 66)"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" class="cls-1" cx="111" cy="111" r="111" transform="translate(1122 582)"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" class="cls-2" cx="90" cy="90" r="90" transform="translate(976 360)"/>
+  </g>
+</svg>
