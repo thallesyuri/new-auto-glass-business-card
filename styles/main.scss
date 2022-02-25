@@ -75,7 +75,7 @@ body {
     overflow: hidden;
 
     position: absolute;
-    bottom: -12vh;
+    bottom: -15vh;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
@@ -105,7 +105,7 @@ body {
       border: 3px solid $third-color;
       padding: 0.3em 1.5em;
       border-radius: 1.5em;
-      margin: clamp(0.1em, 2.5vh, 3em) 0;
+      margin: clamp(0.1em, 2vh, 3em) 0;
       font-size: clamp(1.2em, 3%, 1.5em);
       text-align: center;
 
