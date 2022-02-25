@@ -85,7 +85,7 @@ body {
   border-radius: 1.3em;
   overflow: hidden;
   position: absolute;
-  bottom: -15vh;
+  bottom: -10vh;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -122,19 +122,19 @@ body {
   border: 3px solid #073b4c;
   padding: 0.3em 1.5em;
   border-radius: 1.5em;
-  margin: clamp(0.1em, 2vh, 3em) 0;
-  font-size: clamp(1.2em, 3%, 1.5em);
+  margin: clamp(0.1em, 1vh, 3em) 0;
   text-align: center;
 }
 
 .info .contacts-info-container ul li i {
-  font-size: 1.4em;
+  font-size: clamp(1em, 1%, 1.5em);
   color: #073b4c;
 }
 
 .info .contacts-info-container ul li a {
   color: #073b4c;
   margin-left: clamp(0.5em, 5%, 2em);
+  font-size: clamp(1em, 1%, 1.5em);
 }
 
 .footer-workers-img {
@@ -186,6 +186,9 @@ body {
     -ms-grid-rows: 20% 55% 25%;
         grid-template-rows: 20% 55% 25%;
   }
+  .map-container {
+    bottom: -8vh;
+  }
   .contacts-info-container ul {
     display: -ms-grid;
     display: grid;
@@ -193,12 +196,12 @@ body {
         grid-template-columns: auto auto;
     grid-column-gap: 3em;
   }
-  .contacts-info-container ul a {
-    font-size: 0.8em;
-    margin-left: 0;
+  .contacts-info-container ul li {
+    margin: 0.2em;
+    padding: 1.5em;
   }
-  .contacts-info-container ul i {
-    font-size: 0.8em;
+  .contacts-info-container ul a {
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

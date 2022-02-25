@@ -75,7 +75,7 @@ body {
     overflow: hidden;
 
     position: absolute;
-    bottom: -15vh;
+    bottom: -10vh;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
@@ -105,18 +105,18 @@ body {
       border: 3px solid $third-color;
       padding: 0.3em 1.5em;
       border-radius: 1.5em;
-      margin: clamp(0.1em, 2vh, 3em) 0;
-      font-size: clamp(1.2em, 3%, 1.5em);
+      margin: clamp(0.1em, 1vh, 3em) 0;
       text-align: center;
 
       i {
-        font-size: 1.4em;
+        font-size: clamp(1em, 1%, 1.5em);
         color: $third-color;
       }
 
       a {
         color: $third-color;
         margin-left: clamp(0.5em, 5%, 2em);
+        font-size: clamp(1em, 1%, 1.5em);
       }
     }
   }
@@ -179,17 +179,20 @@ body {
   .main-container {
     grid-template-rows: 20% 55% 25%;
   }
+  .map-container {
+    bottom: -8vh;
+  }
   .contacts-info-container {
     ul {
       display: grid;
       grid-template-columns: auto auto;
       grid-column-gap: 3em;
-      a {
-        font-size: 0.8em;
-        margin-left: 0;
+      li {
+        margin: 0.2em;
+        padding: 1.5em;
       }
-      i {
-        font-size: 0.8em;
+      a {
+        margin-left: 0;
       }
     }
   }
