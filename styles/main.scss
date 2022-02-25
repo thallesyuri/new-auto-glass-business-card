@@ -20,6 +20,7 @@ a {
 
 body {
   background-color: $main-color;
+  overflow: hidden;
 }
 
 .main-container {
@@ -43,9 +44,9 @@ body {
   flex-direction: column;
 
   h1 {
-    font-size: 3em;
+    font-size: clamp(2.5em, 10vw, 10em);
     color: $fourth-color;
-    margin-top: 0.5em;
+    margin-top: 2vh;
   }
 
   h2 {
@@ -64,17 +65,18 @@ body {
   flex-direction: column;
 
   .map-container {
-    width: 8em;
-    height: 8em;
-    background-color: aquamarine;
+    width: 60vw;
+    height: 20vh;
     border-radius: 1.3em;
     overflow: hidden;
 
     position: absolute;
-    bottom: -3em;
+    bottom: -12vh;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+
+    box-shadow: 0px 9px 20px 4px rgba(0, 9, 0, 0.6);
 
     iframe {
       border: 0;
@@ -92,12 +94,12 @@ body {
     align-items: center;
 
     ul {
-      margin-bottom: 10%;
+      margin-bottom: 5vh;
     }
 
     ul li {
-      margin: 30% 0;
-      font-size: 1.2em;
+      margin: 3.5vh 0;
+      font-size: clamp(1.4em, 3.5vw, 10em);
       color: $third-color;
 
       i {
@@ -118,6 +120,7 @@ body {
     opacity: 0.2;
     mix-blend-mode: luminosity;
     z-index: -1;
+    margin-top: 10vh;
   }
 }
 
