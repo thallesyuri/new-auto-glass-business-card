@@ -171,14 +171,11 @@ body {
 //   }
 // }
 
-@media only screen and (max-height: 603px) {
+@media only screen and (max-height: 664px) {
   h1 {
     margin-top: 0.5vh;
     font-size: clamp(2em, 50%, 8em);
   }
-}
-
-@media only screen and (max-height: 480px) {
   .main-container {
     grid-template-rows: 20% 55% 25%;
   }
