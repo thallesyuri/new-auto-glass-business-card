@@ -16,7 +16,7 @@ a {
 
 body {
   background-color: #0f7699;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .main-container {
