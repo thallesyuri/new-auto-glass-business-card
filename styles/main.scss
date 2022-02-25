@@ -44,7 +44,7 @@ body {
   flex-direction: column;
 
   h1 {
-    font-size: clamp(2.5em, 10vw, 10em);
+    font-size: clamp(2em, 50%, 8em);
     color: $fourth-color;
     margin-top: 2vh;
   }
@@ -62,10 +62,10 @@ body {
   border-radius: 2em 2em 0 0;
 
   display: flex;
-  flex-direction: column;
+  z-index: 0;
 
   .map-container {
-    width: 60vw;
+    width: clamp(8em, 60vw, 25em);
     height: 20vh;
     border-radius: 1.3em;
     overflow: hidden;
@@ -74,7 +74,7 @@ body {
     bottom: -12vh;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 10;
 
     box-shadow: 0px 9px 20px 4px rgba(0, 9, 0, 0.6);
 
@@ -98,8 +98,8 @@ body {
     }
 
     ul li {
-      margin: 3.5vh 0;
-      font-size: clamp(1.4em, 3.5vw, 10em);
+      margin: clamp(0.1em, 2.5vh, 3em) 0;
+      font-size: clamp(1.2em, 3%, 1.5em);
       color: $third-color;
 
       i {
@@ -108,19 +108,18 @@ body {
 
       a {
         color: $third-color;
-        margin-left: 2em;
+        margin-left: clamp(0.5em, 5%, 2em);
       }
     }
   }
 }
 
 .footer-workers-img {
+  z-index: -1;
   img {
     width: 100%;
     opacity: 0.2;
     mix-blend-mode: luminosity;
-    z-index: -1;
-    margin-top: 10vh;
   }
 }
 
@@ -134,4 +133,59 @@ body {
 
 .balls-dec {
   display: none;
+}
+
+@media only screen and (min-width: 400px) {
+  .info {
+    width: 80%;
+    margin: auto;
+    border-radius: 2em;
+
+    margin-top: 4vh;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .info {
+    width: 60%;
+
+    .map-container {
+      width: clamp(8em, 40vw, 25em);
+    }
+  }
+}
+
+// @media only screen and (min-width: 800px) and (min-height: 605px) {
+//   body {
+//     background-color: $fourth-color;
+//   }
+//   .main-container {
+//   }
+// }
+
+@media only screen and (max-height: 603px) {
+  h1 {
+    margin-top: 0.5vh;
+    font-size: clamp(2em, 50%, 8em);
+  }
+}
+
+@media only screen and (max-height: 480px) {
+  .main-container {
+    grid-template-rows: 20% 55% 25%;
+  }
+  .contacts-info-container {
+    ul {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-column-gap: 3em;
+      a {
+        font-size: 0.8em;
+        margin-left: 0;
+      }
+      i {
+        font-size: 0.8em;
+      }
+    }
+  }
 }
